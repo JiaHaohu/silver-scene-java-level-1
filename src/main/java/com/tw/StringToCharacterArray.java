@@ -11,7 +11,7 @@ public class StringToCharacterArray {
         // TODO: Please implement the method
         // <-start-
         if (text == null || text.length() == 0) {
-            return null;
+            return new char[0];
         }
         return text.toCharArray();
         // --end-->
