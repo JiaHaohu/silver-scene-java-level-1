@@ -23,7 +23,7 @@ public class PokerSorter {
 
         String[] orders = {"A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"};
 
-        HashMap<String, Integer> posMap = new HashMap<>();
+        HashMap<String, Integer> posMap = new HashMap<>(16);
 
         for (int i = 0; i < orders.length; i++) {
             posMap.put(orders[i], i);
