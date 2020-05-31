@@ -14,7 +14,6 @@ public class ArrayReverser {
     public static int[] reverse(int[] array) {
         // TODO: Please implement the method
         // <-start-
-
         if (array == null || array.length == 0 || array.length == 1) {
             return array;
         }
