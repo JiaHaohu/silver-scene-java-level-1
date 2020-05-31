@@ -15,9 +15,15 @@ public class CharacterReplacement {
     public static String replaceCharacters(String text, Map<Character, Character> replacingRules) {
         // TODO: Please implement the method
         // <-start-
+        if (text == null) {
+            return null;
+        }
+
         if (replacingRules == null || replacingRules.isEmpty()) {
             return text;
         }
+
+
         throw new RuntimeException("Delete me");
         // --end-->
     }
