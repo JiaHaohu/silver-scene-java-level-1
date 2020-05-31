@@ -14,6 +14,9 @@ public class DuplicationRemover {
     public static List<String> removeDuplication(List<String> collection) {
         // TODO: Please implement the method
         // <-start-
+        if (collection == null){
+            return null;
+        }
         throw new RuntimeException("Delete me");
         // --end-->
     }
