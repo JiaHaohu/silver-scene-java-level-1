@@ -1,6 +1,6 @@
 package com.tw;
 
-import java.util.List;
+import java.util.*;
 
 public class DuplicationRemover {
     /**
@@ -14,10 +14,13 @@ public class DuplicationRemover {
     public static List<String> removeDuplication(List<String> collection) {
         // TODO: Please implement the method
         // <-start-
-        if (collection == null){
+        if (collection == null) {
             return null;
         }
-        throw new RuntimeException("Delete me");
+
+        HashSet<String> set = new HashSet<>(collection);
+
+        return new ArrayList<>(set);
         // --end-->
     }
 
