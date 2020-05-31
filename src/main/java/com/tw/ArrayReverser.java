@@ -20,8 +20,8 @@ public class ArrayReverser {
 
         int[] reverseArray = new int[array.length];
 
-        for (int i = array.length-1; i >= 0; i--) {
-            reverseArray[(array.length-1)-i] = array[i];
+        for (int i = array.length - 1; i >= 0; i--) {
+            reverseArray[(array.length - 1) - i] = array[i];
         }
 
         return reverseArray;
