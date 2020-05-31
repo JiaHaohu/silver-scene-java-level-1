@@ -24,7 +24,7 @@ public class DuplicationRemover {
         List<String> list = new ArrayList<>();
 
         for (String s : collection) {
-            if (!containkey(map, s)) {
+            if (!contained(map, s)) {
                 list.add(s);
             }
         }
@@ -37,7 +37,7 @@ public class DuplicationRemover {
     // TODO: You can add additional method(s) if you want
     // <-start-
 
-    private static boolean containkey(HashMap<String, String> map, String s) {
+    private static boolean contained(HashMap<String, String> map, String s) {
 
         if (map.containsKey(s.toLowerCase())) {
             return true;
