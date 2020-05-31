@@ -10,7 +10,10 @@ public class StringToCharacterArray {
     public static char[] toArray(String text) {
         // TODO: Please implement the method
         // <-start-
-        throw new RuntimeException("Delete me");
+        if (text == null || text.length() == 0) {
+            return null;
+        }
+        return text.toCharArray();
         // --end-->
     }
 
