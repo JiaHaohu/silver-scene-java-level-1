@@ -39,9 +39,6 @@ public class CharacterReplacement {
     // TODO: You can add additional method(s) if you want
     // <-start-
 
-    private static boolean keysContain(Map<Character, Character> replacingRules, char textChar) {
-        return replacingRules.containsKey(textChar);
-    }
 
 
     // --end-->
