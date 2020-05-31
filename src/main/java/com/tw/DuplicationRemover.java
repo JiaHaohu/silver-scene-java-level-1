@@ -18,14 +18,34 @@ public class DuplicationRemover {
             return null;
         }
 
-        HashSet<String> set = new HashSet<>(collection);
+        HashMap<String, String> map = new HashMap<>();
 
-        return new ArrayList<>(set);
+
+        List<String> list = new ArrayList<>();
+
+        for (String s : collection) {
+            if (!containkey(map, s)) {
+                list.add(s);
+            }
+        }
+
+        return list;
         // --end-->
     }
 
+
     // TODO: You can add additional method(s) if you want
     // <-start-
+
+    private static boolean containkey(HashMap<String, String> map, String s) {
+
+        if (map.containsKey(s.toLowerCase())) {
+            return true;
+        } else {
+            map.put(s.toLowerCase(), s);
+            return false;
+        }
+    }
 
     // --end-->
 }
