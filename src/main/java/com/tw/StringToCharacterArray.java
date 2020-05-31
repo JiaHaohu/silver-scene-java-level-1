@@ -27,7 +27,18 @@ public class StringToCharacterArray {
     public static int[] toIntArray(String text) {
         // TODO: Please implement the method
         // <-start-
-        throw new RuntimeException("Delete me");
+        if (text == null || text.length() == 0) {
+            return new int[0];
+        }
+
+        char[] chars = text.toCharArray();
+        int[] result = new int[text.length()];
+
+        for (int i = 0; i < chars.length; i++) {
+            result[i] = chars[i];
+        }
+
+        return result;
         // --end-->
     }
 }
