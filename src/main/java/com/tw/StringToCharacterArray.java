@@ -32,6 +32,7 @@ public class StringToCharacterArray {
         }
 
         char[] chars = text.toCharArray();
+
         int[] result = new int[text.length()];
 
         for (int i = 0; i < chars.length; i++) {
