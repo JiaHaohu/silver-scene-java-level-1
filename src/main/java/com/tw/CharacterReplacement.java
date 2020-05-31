@@ -23,8 +23,15 @@ public class CharacterReplacement {
             return text;
         }
 
+        char[] textChars = text.toCharArray();
 
-        throw new RuntimeException("Delete me");
+        for (int i = 0; i < textChars.length; i++) {
+            if (replacingRules.containsKey(textChars[i])) {
+                textChars[i] = replacingRules.get(textChars[i]);
+            }
+        }
+
+        return new String(textChars);
         // --end-->
     }
 
