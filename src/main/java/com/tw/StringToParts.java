@@ -16,7 +16,7 @@ public class StringToParts {
         if (text == null || text.length() == 0) {
             return new String[0];
         }
-        return Arrays.stream(text.split(",")).map(String::trim).toArray(String[]::new);
+        return Arrays.stream(text.split(",")).map(String::trim).filter(x -> x.length() != 0).toArray(String[]::new);
         // --end-->
     }
 
