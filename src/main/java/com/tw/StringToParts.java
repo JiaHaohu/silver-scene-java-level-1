@@ -13,7 +13,10 @@ public class StringToParts {
     public static String[] split(String text) {
         // TODO: Please implement the method
         // <-start-
-        throw new RuntimeException("Delete me");
+        if (text == null || text.length() == 0) {
+            return new String[0];
+        }
+        return null;
         // --end-->
     }
 
