@@ -16,7 +16,7 @@ public class StringToParts {
         if (text == null || text.length() == 0) {
             return new String[0];
         }
-        return null;
+        return text.split(",");
         // --end-->
     }
 
